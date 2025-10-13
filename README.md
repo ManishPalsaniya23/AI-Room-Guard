@@ -10,10 +10,9 @@ This project implements a **real-time AI Room Guard** system that integrates **f
 2. [Components](#components)  
    - [Face Recognition](#face-recognition)  
    - [AI Conversation (Gemini 2.5 + Coqui TTS)](#ai-conversation-gemini-25--coqui-tts)  
-   - [Main Guard Pipeline](#main-guard-pipeline)  
-3. [Setup & Dependencies](#setup--dependencies)  
-4. [Usage](#usage)  
-5. [Modifications & Improvements](#modifications--improvements)
+   - [Main Guard Pipeline](#main-guard-pipeline)    
+3. [Usage](#usage)  
+4. [Modifications & Improvements](#modifications--improvements)
 
 ---
 
@@ -98,7 +97,18 @@ The AI Room Guard system is designed to:
      - Known user says `"escape"`.
      - Manual quit with `'q'` key.
      - Exit commands are given in main loop.
-    
+
+---
+
+### Usage
+
+* Speak "guard my room" to activate the guard mode.
+
+* Interact via speech if an intruder is present.
+
+* Known users can stop guarding using "escape" or press 'q'.
+
+--- 
 
 ### Modifications & Improvements
 
