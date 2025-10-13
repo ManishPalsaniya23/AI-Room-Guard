@@ -98,3 +98,27 @@ The AI Room Guard system is designed to:
      - Known user says `"escape"`.
      - Manual quit with `'q'` key.
      - Exit commands are given in main loop.
+    
+
+### Modifications & Improvements
+
+## Face Recognition
+- Use **ArcFace + RetinaFace** for higher accuracy if GPU is available.
+- Adjust **threshold distance** for stricter or looser matching.
+- Implement **multi-camera support** for full-room coverage.
+
+## AI Conversation
+- Integrate **conversation history with intruder photos** for more contextual responses.
+- Customize **initial prompts** based on intruder scenarios.
+- Switch to **offline LLM or local models** for reduced API dependency.
+
+## TTS
+- Enable **GPU** for faster Coqui TTS playback if supported.
+- Switch to **different voices or languages**.
+- Implement **audio caching** to avoid repeated TTS calls for repeated responses.
+
+## Guard Pipeline
+- Trigger **automated alerts** via email/SMS when unknown individuals are detected.
+- Add **motion detection** to reduce unnecessary face recognition on empty frames.
+- Store **timestamps and logs** of recognized individuals for audit.
+
